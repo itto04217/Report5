@@ -1,14 +1,8 @@
-import java.lang.NullPointerException;
+import java.lang.NumberFormatException;
 
 public class Report5 {
     public static void main(String args[]){
-        try{
-            String str;
-            str = null;
-            System.out.println(str.length());
-        }catch(NullPointerException n){
-            System.out.println("NullPointerExceptionが発生しました。");
-            System.out.println(n.getMessage());
-        }    
+       String str = "壱百満";
+       int value = Integer.parseInt(str);
     }
 }
